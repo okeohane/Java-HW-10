@@ -34,7 +34,7 @@ Write an abstract superclass encapsulating a Vacation. The class has
 • Implements the Cloneable interface and the clone method  
 Use the following Test class.  
 
-public class Test { 
+public class Test {  
   public static void main( String [] args ) throws CloneNotSupportedException{  
   
     AllInclusiveVacation aiv1 = new AllInclusiveVacation( "Bora Bora", 10000.00, "Four Seasons", 5, 9000.50 );  
