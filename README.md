@@ -33,8 +33,10 @@ Write an abstract superclass encapsulating a Vacation. The class has
 • An equals method that returns true if the destination, budget and price are the same for the two vacations  
 • Implements the Cloneable interface and the clone method  
 Use the following Test class.  
-public class Test {  
+
+public class Test { 
   public static void main( String [] args ) throws CloneNotSupportedException{  
+  
     AllInclusiveVacation aiv1 = new AllInclusiveVacation( "Bora Bora", 10000.00, "Four Seasons", 5, 9000.50 );  
     System.out.println( "The first all-inclusive vacation is:\n" + aiv1 );  
     double money1 = aiv1.overBudget( );  
@@ -44,7 +46,7 @@ public class Test {
       System.out.printf( "It is over budget by %5.2f", money1 );  
     else  
       System.out.printf( "It is under budget by %5.2f", Math.abs(money1));  
-    
+      
     AllInclusiveVacation aiv2 = new AllInclusiveVacation( "Bahamas", 2000.00, "ClubMed", 4, 2049.99 );  
     System.out.println( "\nThe second all-inclusive vacation is:\n" + aiv2 );  
     double money2 = aiv2.overBudget( );  
